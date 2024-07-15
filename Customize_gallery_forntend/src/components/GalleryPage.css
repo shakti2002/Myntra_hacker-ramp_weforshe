@@ -1,0 +1,76 @@
+/* src/components/GalleryPage.css */
+
+.gallery-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1{
+    color: palevioletred;
+    font-weight: bolder;
+    text-align: center;
+}
+.sort-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sort-button:hover {
+    background-color: #45a049;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.image-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.rating {
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+.comment-icon {
+    margin-right: 5px;
+    font-size: 16px;
+}
